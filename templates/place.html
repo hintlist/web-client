@@ -1,0 +1,15 @@
+<ol class="breadcrumb">
+	<li><a href="/">Главная</a></li>
+	<li><a href="/place/:id">{{ place.name }}</a></li>
+</ol>
+<div class="container-fluid place">
+	<h1>{{ place.name }}</h1>
+	<div class="row">
+		<div class="col-xs-4">
+			<div id="map-canvas" style="min-height: 250px" />
+		</div>
+		<div class="col-xs-8">
+			{{ place.desc }}
+		</div>
+	</div>
+</div>

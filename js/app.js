@@ -13,6 +13,14 @@ hintApp.config(['$routeProvider', function($routeProvider){
 			controller: 'EventViewCtrl',
 			templateUrl: 'templates/event.html'
 		})
+		.when('/place/:id', {
+			controller: 'PlaceViewCtrl',
+			templateUrl: 'templates/place.html'
+		})
+		.when('/places', {
+			controller: 'PlacesListCtrl',
+			templateUrl: 'templates/places.html'
+		})
 		.otherwise({
 			controller: 'MainPageCtrl'
 			//templateUrl: 'index.html'

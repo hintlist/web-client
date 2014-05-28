@@ -29,6 +29,18 @@ hintControllers.controller('EventViewCtrl', ['$scope', '$http', function($scope,
 hintControllers.controller('PlaceViewCtrl', ['$scope', '$http', function($scope, $http){
 	$http.get('place.json').success(function(data){
 		$scope.place = data;
+		console.log(data);
+		var myLatlng = new google.maps.LatLng(data.coords[0], data.coords[1]);
+		var mapOptions = {
+			center: myLatlng,
+			zoom: 16
+		};
+		var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+		var marker = new google.maps.Marker({
+			position: myLatlng,
+			map: map,
+			title: data.name
+		});
 	});
 }]);
 
