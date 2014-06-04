@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <places>
+        <place>
+            <name>Главный корпус БГУ</name>
+            <rating>9</rating>
+            <coords>56.00003, 42.90668</coords>
+        </place>
+        <place>
+            <name>Театр имени Янки Купалы</name>
+            <rating>7</rating>
+            <coords>78.57479, 34,65463</coords>
+        </place>
+        <place>
+            <name>Кинотеатр "Центральный"</name>
+            <rating>8</rating>
+            <coords>17.98766, 90.84327</coords>
+        </place>
+        <place>
+            <name>Клуб "ЮЛА"</name>
+            <rating>5</rating>
+            <coords>73.98743, 48.96071</coords>
+        </place>
+    </places>
